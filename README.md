@@ -1,16 +1,16 @@
 # notes-api
 
-Simple REST API for notes made on top of FastAPI, packed in Docker. The goal is to learn DevOps methodology and practice: containerization, multi-stage builds, Docker Compose with PostgreSQL, volumes, networks, and healthcheck.
+Simple REST API for notes build with FastAPI, packaged with Docker. The goal is to practice DevOps methodology: containerization, multi-stage builds, Docker Compose with PostgreSQL, volumes, networks, and healthcheck.
 
 ## Stack
 
 - Python 3.12 / FastAPI / Uvicorn
 - Docker
 
-## Actual Status: Day 1 - basic docker image
+## Current Status: Day 1 - basic Docker image
 
-- minimal FastAPI-service with 2 endpoints (`/` и `/health`)
-- `Dockerfile` with the correct layers order (requirements copy and installed separately from the code - for effective caching and rebuilds)
+- minimal FastAPI service with 2 endpoints (`/` и `/health`)
+- `Dockerfile` with correct layer ordering (requirements are copied and installed separately from the application code, for effective layer caching on rebuilds)
 
 ## Roadmap
 
